@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "project_name": "Parallel Webcam Detection and Pose",
+  "project_id": "e73b5ece-10bc-479f-a012-1d33653f2ac1",
+  "pipegen_version": "0.5.1",
+  "exported_at": "2026-10-17T11:49:27Z",
+  "origin": {
+    "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "trt": "10.3.0",
+    "arch": "x86_64",
+    "image": "craftifaidocker/deepstream:7.1-amd64-v3",
+    "gpu_slug": "nvidia-geforce-rtx-3050-6gb-laptop-gpu"
+  },
+  "models": [
+    {
+      "name": "yolo11n-pose",
+      "onnx": "models/yolo11n-pose.onnx",
+      "plan": "models/yolo11n-pose.fp32.plan",
+      "precision": "fp32",
+      "workspace_mb": 1024,
+      "builder_optimization_level": 3,
+      "origin_builder_optimization_level": 0,
+      "onnx_sha256": "a9e3d4cd14b34e2c53744140f02f53be0fdd4736c87ebbfd38a2578683c8ced3",
+      "plan_sha256": "784a47f792dedc6e856cd0915d8719fe7fdc44d884a9dd3928f0fa5ea609895b",
+      "engine_bytes": 19238996,
+      "layer_count": 250
+    },
+    {
+      "name": "yolov8n",
+      "onnx": "models/yolov8n.onnx",
+      "plan": "models/yolov8n.fp32.plan",
+      "precision": "fp32",
+      "workspace_mb": 1024,
+      "builder_optimization_level": 3,
+      "origin_builder_optimization_level": 0,
+      "onnx_sha256": "2dedb0edb323ead71e0b693e20d5c6c7d84352fdbebad333513a588bbe8bdcd2",
+      "plan_sha256": "9f5dbb917dee78aad1f2874a37d350e2d4b883f5b4e60b27689c476a45e7ad2f",
+      "engine_bytes": 21570476,
+      "layer_count": 236
+    }
+  ],
+  "io": {
+    "default_input_kind": "file",
+    "default_input": "a.mp4",
+    "supported_inputs": [
+      "file",
+      "rtsp"
+    ],
+    "input_required": true,
+    "output_dir": "out",
+    "has_display_sink": true
+  },
+  "warnings": [
+    "the pipeline read a.mp4, which lives outside the project and cannot be shipped \u2014 the recipient must pass --input"
+  ]
+}

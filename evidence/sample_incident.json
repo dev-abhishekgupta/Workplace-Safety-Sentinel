@@ -1,0 +1,1 @@
+{"incident_id": "INC-0001", "timestamp": "2026-10-17T12:56:23Z", "event_type": "restricted_zone_entry", "camera_id": "camera_01", "track_id": 1, "zone_id": "restricted_zone_01", "confidence": 0.9, "reference_point": "bottom_center", "frame": 2}

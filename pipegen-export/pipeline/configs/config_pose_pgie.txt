@@ -1,0 +1,17 @@
+[property]
+gpu-id=0
+net-scale-factor=0.00392157
+model-color-format=0
+model-engine-file=../../models/yolo11n-pose.fp32.plan
+infer-dims=3;640;640
+network-input-order=0
+batch-size=1
+network-mode=0
+process-mode=1
+network-type=100
+output-blob-names=output0
+output-tensor-meta=1
+interval=0
+gie-unique-id=2
+maintain-aspect-ratio=1
+symmetric-padding=1

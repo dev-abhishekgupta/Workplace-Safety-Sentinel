@@ -1,0 +1,16 @@
+# PipeGen runtime artifacts
+pipegen-export/.pipegen-state/
+pipegen-export/pipeline/build/
+pipegen-export/out/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Secrets
+.env
+*.key
+*.pem
